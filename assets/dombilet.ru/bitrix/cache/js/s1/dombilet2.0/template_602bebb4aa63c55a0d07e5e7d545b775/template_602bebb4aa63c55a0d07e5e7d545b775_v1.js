@@ -486,7 +486,7 @@ function JCTitleSearchNewTopMenu(arParams)
 
         // Восстановление меню при фокусе
         searchInput.addEventListener('focus', function () {
-            var menuContent = menu.innerHTML.replace(../../../../../../../..<!--.*?-->/g, '').trim();
+            var menuContent = menu.innerHTML.replace(/<!--.*?-->/g, '').trim();
             if (menuContent !== '') {
                 var searchForm = _this._getSearchForm();
                 if (searchForm) {
@@ -1016,7 +1016,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // При фокусе — добавляем _active, только если меню НЕ пустое
     input.addEventListener('focus', function (e) {
         // Убираем пробелы и комментарии, чтобы определить, пустое ли меню
-        const menuContent = menu.innerHTML.replace(../../../../../../../..<!--.*?-->/g, '').trim();
+        const menuContent = menu.innerHTML.replace(/<!--.*?-->/g, '').trim();
         const inputValue = e.target.value.trim();
 
         if (menuContent !== '') {
