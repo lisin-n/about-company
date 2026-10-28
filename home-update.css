@@ -52,3 +52,5 @@
  .dom-cards.is-dragging{scroll-snap-type:none;cursor:grabbing}
  .dom-cards.is-dragging>a{cursor:grabbing}
 }
+
+.dom-cards{gap:8px}
