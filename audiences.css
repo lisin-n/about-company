@@ -1,0 +1,67 @@
+.seller-access-note{font-size:12px!important;line-height:1.6!important;margin-top:18px!important;color:#909399!important}
+.seller-access-note a{color:var(--orange-color);text-underline-offset:3px}
+.audience-pending{cursor:default;opacity:.72}
+.audience-pending:hover{background:var(--orange-color)}
+.audience-pending.buyer-button_light:hover{background:var(--light-orange-color)}
+.sellers-page .buyer-hero h1{max-width:630px;margin-left:auto;margin-right:auto}
+.audience-contact{display:flex;align-items:center;gap:28px;background:#fff;border-radius:30px;padding:32px}
+.audience-contact__photo{width:100px;height:100px;object-fit:cover;border-radius:50%;flex-shrink:0}
+.audience-contact p{font-size:14px;line-height:1.7;font-weight:600;color:#606266}
+.audience-contact__links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:16px}
+.audience-contact__links a{font-size:16px;line-height:1.5;font-weight:700;color:var(--orange-color)}
+.partners-page .buyer-hero{padding-bottom:40px}
+.partners-page .partner-subtitle{font-size:20px;line-height:1.5;font-weight:600;text-align:center}
+.partner-directions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:32px;text-align:left}
+.partner-direction{display:flex;flex-direction:column;align-items:flex-start;background:#f4f4f4;padding:24px;border-radius:26px;transition:background .2s}
+.partner-direction:hover{background:var(--light-orange-color)}
+.partner-direction>img{display:block;width:84px;height:84px;border-radius:50%;object-fit:cover;margin-bottom:20px}
+.partner-direction h2{font-size:20px;line-height:1.4;font-weight:700;margin-bottom:14px}
+.partner-direction p{font-size:14px;line-height:1.7;font-weight:600;color:#606266;margin-bottom:24px}
+.partner-direction__action{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:auto;width:100%;font-size:13px;font-weight:700;line-height:1.5;color:var(--orange-color)}
+.partner-direction__action>span{font-size:22px}
+.partners-page .buyer-finish{width:min(824px,100%);height:auto;margin-top:0;background-size:100% 100%}
+.audience-page-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 28px;padding:28px 20px 0;font-size:13px;font-weight:600;color:#606266}
+.audience-page-links a:hover{color:var(--orange-color)}
+.audience-page-links a:focus-visible{outline:2px solid var(--orange-color);outline-offset:4px}
+@media(max-width:600px){
+ .partner-directions{grid-template-columns:1fr;margin-top:24px;gap:12px}
+ .partners-page .buyer-hero{padding:28px 20px}
+ .partners-page .partner-subtitle{font-size:18px}
+ .partner-direction{padding:24px}
+ .partner-direction h2{font-size:19px}
+ .partner-direction>img{width:76px;height:76px;margin-bottom:16px}
+ .audience-contact{flex-direction:column;gap:20px;padding:24px;text-align:center}
+ .audience-contact__links{justify-content:center}
+ .audience-page-links{gap:12px 20px;font-size:12px;padding-top:24px}
+ .partners-page .buyer-finish{width:100%;height:auto;background-size:100% 100%}
+}
+.sellers-page #seller-support{padding-bottom:0}
+.sellers-page .buyer-finish{margin-top:0}
+
+
+
+@media(min-width:992px){.sellers-page #audience>.buyer-container{max-width:1200px}}
+
+@media(min-width:992px){.sellers-page #one-time>.buyer-container{max-width:1200px}}
+
+@media(min-width:992px){.sellers-page #brokers>.buyer-container{max-width:1200px}}
+
+/* Larger partner-page rays continue behind the white hero panel. */
+.buyers-page.partners-page .buyer-finish{width:min(1200px,100%);margin-top:-160px}
+@media(max-width:600px){.buyers-page.partners-page .buyer-finish{width:100%;margin-top:-80px}}
+
+.buyers-page.sellers-page .buyer-finish{width:min(1200px,100%);margin-top:-160px}
+@media(max-width:600px){.buyers-page.sellers-page .buyer-finish{width:100%;margin-top:-80px}}
+
+@media(min-width:992px){
+ .sellers-page #brokers .buyer-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+ .sellers-page #brokers .buyer-card{grid-column:auto;padding:24px 20px}
+ .sellers-page #brokers .buyer-card h3{font-size:17px;line-height:1.4}
+ .sellers-page #brokers .buyer-card p{font-size:13px;line-height:1.65}
+}
+
+.sellers-page #brokers .buyer-card{background:transparent;border-radius:0;padding:0}
+@media(min-width:992px){.sellers-page #brokers .buyer-grid{gap:24px}}
+
+.buyers-page.partners-page .buyer-finish{margin-top:-240px}
+@media(max-width:600px){.buyers-page.partners-page .buyer-finish{margin-top:-120px}}

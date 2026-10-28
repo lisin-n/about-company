@@ -1,0 +1,263 @@
+.buyers-page{padding-bottom:0;color:var(--main-color);font-family:Manrope,sans-serif}
+.buyer-container{width:calc(100% - 30px);max-width:824px;margin:0 auto}
+.buyer-hero{position:relative;z-index:1;background:#fff;border-radius:30px;padding:40px 48px;text-align:center}
+.buyer-eyebrow{display:block;color:var(--main-grey-color);font-size:14px;font-weight:600;margin-bottom:24px}
+.buyer-hero h1,.buyer-section h2{font-size:32px;font-weight:700;line-height:1.4;text-wrap:balance}
+.buyer-hero h1{margin-bottom:24px}
+.buyer-brand{display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+.buyer-brand svg{width:32px;height:34px}
+.buyer-hero>p,.buyer-lead{font-size:15px;font-weight:600;line-height:1.7;color:#606266;text-wrap:pretty}
+.buyer-hero>p{max-width:670px;margin:auto}
+.buyer-buttons{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px}
+.buyer-button{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:14px 24px;border-radius:100px;background:var(--orange-color);color:#fff;font-size:14px;font-weight:700;line-height:1.4;text-align:center;transition:background .2s}
+.buyer-button:hover{background:#eb7200}
+.buyer-button_light{color:var(--main-color);background:var(--light-orange-color)}
+.buyer-button_light:hover{background:#ffe0bc}
+.buyers-page a:focus-visible,.buyers-page button:focus-visible,.buyers-page summary:focus-visible{outline:2px solid var(--orange-color);outline-offset:4px}
+.buyer-jumps{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;padding:24px 0 12px}
+.buyer-jumps a{font-size:12px;font-weight:600;background:#ffffffa8;border-radius:30px;padding:10px 14px;transition:background .2s}
+.buyer-jumps a:hover{background:#fff0e1}
+.buyer-section{padding:40px 0;scroll-margin-top:100px}
+.buyer-section h2{text-align:center;margin-bottom:28px}
+.buyer-lead{max-width:740px;margin:-8px auto 28px;text-align:center}
+.buyer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.buyer-grid_three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.buyer-grid_four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.buyer-card{background:#fff;border-radius:24px;padding:28px;min-width:0}
+.buyer-card_wide{grid-column:1/-1}
+.buyer-card h3,.buyer-note h3{font-size:18px;line-height:1.4;font-weight:700;margin-bottom:12px}
+.buyer-card p,.buyer-note p,.buyer-support p{font-size:14px;font-weight:600;line-height:1.7;color:#606266}
+.buyer-card p a,.buyer-faq__answer a{color:var(--orange-color);text-decoration:underline;text-underline-offset:3px}
+.buyer-card .buyer-icon{margin-bottom:24px}
+.buyer-icon{display:block;width:36px;height:36px;fill:var(--orange-color);flex-shrink:0}
+.buyer-step{display:block;font-size:24px;font-weight:700;color:var(--orange-color);margin-bottom:20px}
+.buyer-3d{display:block;width:100px;height:100px;background-image:url('../about-company/assets/source-icons-matte-v2.png');background-size:300% 200%;background-repeat:no-repeat;margin:0 0 20px}
+.buyer-3d-img{display:block;width:100px;height:100px;object-fit:contain;margin-bottom:20px}
+.buyer-seller{background:#f5f5f5;border-radius:24px;padding:20px 12px;text-align:center}
+.buyer-seller .buyer-3d{margin:0 auto 12px}
+.buyer-seller h3{font-size:13px;font-weight:700;line-height:1.5;text-wrap:balance}
+.buyer-highlight{background:var(--light-orange-color);padding:24px 32px;max-width:640px;margin:28px auto 0;border-radius:24px;text-align:center;font-size:18px;font-weight:600;line-height:1.45;text-wrap:balance}
+.buyer-highlight strong{font-weight:700}
+.buyer-note{margin-top:20px;padding:24px 28px;border-radius:24px;background:#ffffff7a}
+.buyer-note p+p{margin-top:12px}
+.buyer-text-link{display:block;color:var(--orange-color);font-size:14px;font-weight:700;line-height:1.5;margin-top:16px;text-underline-offset:4px}
+.buyer-text-link:hover{text-decoration:underline}
+.buyer-offer{text-align:center;margin-top:24px}
+.buyer-faq{margin-top:10px;background:#fff;border-radius:20px;padding:0 24px}
+.buyer-faq summary{position:relative;display:block;list-style:none;cursor:pointer;font-size:16px;font-weight:700;line-height:1.5;padding:24px 32px 24px 0}
+.buyer-faq summary::-webkit-details-marker{display:none}
+.buyer-faq summary::after{content:'+';position:absolute;right:0;top:20px;font-size:26px;color:var(--orange-color);font-weight:500}
+.buyer-faq[open] summary::after{content:'−'}
+.buyer-faq__answer{font-size:14px;line-height:1.75;font-weight:600;color:#606266;padding:0 32px 24px 0}
+.buyer-faq__answer p+p{margin-top:10px}
+.buyer-faq__answer ol{padding-left:20px}
+.buyer-faq__answer li+li{margin-top:10px}
+.buyers-page input,.buyers-page textarea{display:block;width:100%;background:#fff;border:1px solid #d8dadd;border-radius:14px;padding:14px 16px;font:inherit;font-size:14px;line-height:1.5;color:var(--main-color)}
+.buyers-page input:focus,.buyers-page textarea:focus{outline:2px solid var(--orange-color);outline-offset:2px}
+.buyers-page textarea{resize:vertical;min-height:116px}
+[hidden]{display:none!important}
+.buyer-support{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:32px;background:#fff;border-radius:30px}
+.buyer-support p+p{margin-top:16px}
+.buyer-support__phone{display:block;font-size:23px;line-height:1.5;font-weight:700;margin-top:28px;white-space:nowrap}
+.buyer-support__hours{display:block;font-size:12px;color:#909399;line-height:1.5;margin-top:12px}
+#buyer-contact label{display:block;font-size:13px;line-height:1.5;font-weight:600;margin-bottom:16px}
+#buyer-contact label>span{font-weight:500;color:#909399}
+#buyer-contact input,#buyer-contact textarea{margin-top:6px;background:#f7f8f9}
+#buyer-contact button{width:100%}
+.buyer-support .buyer-form-hint{font-size:11px;line-height:1.6;color:#909399;margin-top:12px}
+.buyer-finish{width:min(700px,100%);height:auto;aspect-ratio:1490/540;background:url('../about-company/assets/footer-rays.png') center bottom/100% 100% no-repeat;margin:-30px auto 0;pointer-events:none}
+@media(min-width:992px){.buyers-page{margin-top:-24px;position:relative;z-index:1}}
+@media(max-width:600px){
+ .buyer-hero{padding:28px 22px;border-radius:24px}
+ .buyer-hero h1,.buyer-section h2{font-size:28px;line-height:1.35}
+ .buyer-hero h1 br{display:none}
+ .buyer-hero>p,.buyer-lead{font-size:14px}
+ .buyer-section{padding:32px 0;scroll-margin-top:86px}
+ .buyer-section h2{margin-bottom:24px}
+ .buyer-eyebrow{margin-bottom:18px}
+ .buyer-grid,.buyer-grid_three{grid-template-columns:1fr}
+ .buyer-grid_four{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .buyer-card{padding:24px}
+ .buyer-card h3,.buyer-note h3{font-size:17px}
+ .buyer-card_wide{grid-column:auto}
+ .buyer-buttons{gap:10px;margin-top:24px}
+ .buyer-buttons .buyer-button{width:100%}
+ .buyer-jumps{justify-content:flex-start;flex-wrap:nowrap;overflow:auto;width:100%;padding:18px 15px 4px;scrollbar-width:none}
+ .buyer-jumps a{flex-shrink:0}
+ .buyer-highlight{padding:20px 18px;font-size:18px}
+ .buyer-note{padding:24px}
+ .buyer-faq{padding:0 20px}
+ .buyer-faq summary{font-size:15px;padding-top:20px;padding-bottom:20px}
+ .buyer-faq__answer{padding-right:0}
+ .buyer-support{grid-template-columns:1fr;gap:28px;padding:24px}
+ .buyer-support__phone{font-size:22px}
+ .buyer-finish{width:100%;height:auto;background-size:100% 100%}
+}
+@media(prefers-reduced-motion:no-preference){html:has(.buyers-page){scroll-behavior:smooth}}
+/* Reuse the callback panel and artwork from the DomBilet home page. */
+.buyer-home-callback>.buyer-container{max-width:1200px}
+.buyer-home-callback .box-callback{padding:28px 32px}
+.buyer-home-callback .box-callback__inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.buyer-home-callback .box-callback__descp{padding:38px 20px;min-height:420px}
+.buyer-home-callback .box-callback__title{margin-bottom:12px;font-size:32px;line-height:1.25}
+.buyer-home-callback .box-callback__subtitle{font-size:16px;line-height:1.5}
+.buyer-home-callback #buyer-contact label{margin-bottom:8px;font-size:14px}
+.buyer-home-callback #buyer-contact input{background:#fff;margin-top:0;border-radius:12px;border-color:#dcdfe6}
+.buyer-home-callback #buyer-contact .form__field{margin-bottom:20px}
+.buyer-home-callback #buyer-contact .callback-consent{display:flex;align-items:flex-start;gap:10px;margin:4px 0 20px;font-size:12px;line-height:1.5;color:#606266;font-weight:600}
+.buyer-home-callback #buyer-contact .callback-consent input{appearance:auto;display:block;flex:0 0 20px;width:20px;height:20px;margin:2px 0 0;padding:0;border-radius:5px;accent-color:var(--orange-color)}
+.callback-consent a{color:var(--orange-color);text-decoration:underline;text-underline-offset:2px}
+.buyer-home-callback .form__btn{border-radius:12px;min-height:48px}
+.callback-status{font-size:12px;color:#606266;line-height:1.6;margin-top:14px}
+.buyer-callback-help{max-width:680px;margin:28px auto 0;text-align:center}
+.buyer-callback-help h3{font-size:18px;font-weight:700;line-height:1.4;margin-bottom:12px}
+.buyer-callback-help p{font-size:14px;line-height:1.7;color:#606266;font-weight:600}
+.buyer-callback-help a{color:var(--orange-color);white-space:nowrap}
+@media(max-width:600px){.buyer-home-callback .box-callback{padding:24px}.buyer-home-callback .box-callback__inner{grid-template-columns:1fr;gap:24px}.buyer-home-callback .box-callback__descp{min-height:0;padding:0;background:none!important}.buyer-home-callback .box-callback__title{text-align:left;font-size:28px}.buyer-home-callback .box-callback__subtitle{text-align:left;font-size:15px}.buyer-callback-help{text-align:left;padding:0 9px}}
+
+.buyer-selection-button{margin-top:20px;text-decoration:none}
+@media(max-width:600px){.buyer-selection-button{width:100%}}
+
+/* A two-line central headline, surrounded by interactive benefit labels. */
+.buyer-safety>.buyer-container{max-width:1200px}
+.buyer-safety__panel{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:44px 24px;padding:24px 0;background:none}
+.buyer-safety__intro{grid-column:1/-1;grid-row:2;text-align:center;justify-self:center;width:100%}
+.buyer-safety .buyer-safety__intro h2{font-size:clamp(28px,3.1vw,44px);line-height:1.22;text-wrap:initial;text-align:center;margin:0;font-weight:700}
+.buyer-safety__intro .buyer-button{margin-top:28px}
+.buyer-safety__grid{display:contents}
+.buyer-safety__item{position:relative;justify-self:center;max-width:100%;min-width:0;z-index:1}
+.buyer-safety__item:nth-child(1){grid-column:1/3;grid-row:1}
+.buyer-safety__item:nth-child(2){grid-column:3/5;grid-row:1}
+.buyer-safety__item:nth-child(3){grid-column:5/7;grid-row:1}
+.buyer-safety__item:nth-child(4){grid-column:2/4;grid-row:3}
+.buyer-safety__item:nth-child(5){grid-column:4/6;grid-row:3}
+.buyer-safety__item:has([aria-expanded="true"]){z-index:10}
+.buyer-safety__trigger{display:flex;align-items:center;gap:12px;max-width:330px;padding:12px 16px 12px 12px;background:#ffffff9c;border:1px solid #ffffff70;border-radius:100px;text-align:left;font:inherit;font-size:15px;font-weight:700;line-height:1.4;color:var(--main-color);cursor:pointer;transition:background .2s,box-shadow .2s}
+.buyer-safety__trigger:hover,.buyer-safety__trigger[aria-expanded="true"]{background:#fff;box-shadow:0 8px 24px #3031330a}
+.buyer-safety__icon{display:flex;align-items:center;justify-content:center;flex:0 0 34px;width:34px;height:34px;background:var(--orange-color);border-radius:50%;margin:0}
+.buyer-safety__icon .buyer-icon{width:20px;height:20px;fill:#fff}
+.buyer-safety__hint{font-size:20px;font-weight:500;color:var(--orange-color);margin-left:4px}
+.buyer-safety__tooltip{position:absolute;bottom:calc(100% + 12px);left:50%;width:320px;max-width:calc(100vw - 40px);padding:22px 24px;transform:translateX(-50%) translateY(-4px);border-radius:20px;background:#fff;box-shadow:0 14px 48px #3031331a;visibility:hidden;opacity:0;transition:opacity .15s,transform .15s;pointer-events:none}
+.buyer-safety__tooltip::before{content:'';position:absolute;bottom:-7px;left:calc(50% - 7px);width:14px;height:14px;transform:rotate(45deg);background:#fff}
+.buyer-safety__trigger[aria-expanded="true"]+.buyer-safety__tooltip{visibility:visible;opacity:1;transform:translateX(-50%) translateY(0);pointer-events:auto}
+.buyer-safety__tooltip p{font-size:14px;line-height:1.65;color:#606266;font-weight:500}
+.buyer-safety__item:nth-child(n+4) .buyer-safety__tooltip{top:calc(100% + 12px);bottom:auto}
+.buyer-safety__item:nth-child(n+4) .buyer-safety__tooltip::before{top:-7px;bottom:auto}
+.buyer-safety__promise{grid-column:1/-1;text-align:center;font-size:14px;line-height:1.6;color:#606266;margin:0;text-wrap:balance}
+.buyer-safety__promise strong{color:var(--main-color);font-weight:700}
+@media(max-width:700px){
+ .buyer-safety__panel{grid-template-columns:1fr;gap:14px;padding:0}
+ .buyer-safety__intro{grid-column:1;grid-row:1;margin-bottom:20px}
+ .buyer-safety .buyer-safety__intro h2{font-size:28px;line-height:1.3;text-wrap:balance}
+ .buyer-safety__intro h2 br{display:none}
+ .buyer-safety__item:nth-child(n){grid-column:1;grid-row:auto;transform:none;justify-self:stretch}
+ .buyer-safety__trigger{width:100%;max-width:none;font-size:15px;padding:12px 16px}
+ .buyer-safety__trigger>span:nth-child(2){flex:1}
+ .buyer-safety__tooltip,.buyer-safety__item:nth-child(n+4) .buyer-safety__tooltip{position:relative;left:auto;top:auto;bottom:auto;width:100%;max-width:none;margin-top:0;display:none;transform:none;box-shadow:none}
+ .buyer-safety__trigger[aria-expanded="true"]+.buyer-safety__tooltip{display:block;margin-top:10px;transform:none}
+ .buyer-safety__tooltip::before{display:none}
+ .buyer-safety__promise{margin-top:20px}
+}
+@media(prefers-reduced-motion:reduce){.buyer-safety__tooltip,.buyer-safety__trigger{transition:none}}
+
+/* FAQ follows the compact accordion grid on the main site. */
+#faq>.buyer-container{max-width:1200px}
+#faq-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,580px),1fr));align-items:start;gap:32px}
+:is(#faq,#returns) .buyer-faq{margin:0;padding:0;background:none;border-radius:0;min-width:0}
+:is(#faq,#returns) .buyer-faq summary{display:flex;align-items:center;gap:24px;padding:10px 15px;font-size:18px;font-weight:600;line-height:1.5556;transition:opacity .2s}
+:is(#faq,#returns) .buyer-faq summary:hover{opacity:.7}
+:is(#faq,#returns) .buyer-faq summary::before{content:'+';display:flex;align-items:center;justify-content:center;flex:0 0 28px;width:28px;height:28px;font-size:30px;font-weight:500;line-height:1;color:var(--orange-color);transition:transform .2s}
+:is(#faq,#returns) .buyer-faq summary::after{display:none}
+:is(#faq,#returns) .buyer-faq[open] summary::before{transform:rotate(-45deg)}
+:is(#faq,#returns) .buyer-faq__answer{padding:16px 0 16px 63px;font-size:16px;font-weight:600;line-height:1.625}
+@media(max-width:600px){#faq-items{grid-template-columns:1fr;gap:24px}:is(#faq,#returns) .buyer-faq summary{gap:16px;padding:10px 0;font-size:16px}:is(#faq,#returns) .buyer-faq__answer{padding:12px 0 12px 44px;font-size:14px}}
+
+@media(min-width:992px){
+ #tickets>.buyer-container{max-width:1200px}
+ #tickets .buyer-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #tickets .buyer-card_wide{grid-column:auto}
+}
+
+.buyer-safety .buyer-safety__intro .buyer-lead{max-width:760px;margin:24px auto 0;text-align:center;font-size:15px;line-height:1.7}
+@media(max-width:600px){.buyer-safety .buyer-safety__intro .buyer-lead{font-size:14px;margin-top:20px}}
+
+@media(min-width:701px){.buyer-safety__item{align-self:center}.buyer-safety__trigger{min-height:60px}}
+
+@media(min-width:1001px){
+ #safety{padding-top:88px}
+ .buyer-safety__item:nth-child(1){justify-self:end;transform:translateX(12px)}
+ .buyer-safety__item:nth-child(2){transform:translateY(-24px)}
+ .buyer-safety__item:nth-child(3){justify-self:start;transform:translateX(-12px)}
+ .buyer-safety__item:nth-child(4){transform:translateX(30px)}
+ .buyer-safety__item:nth-child(5){transform:translateX(-30px)}
+}
+
+/* Final content overlaps only the top of the footer artwork. */
+.buyers-page{position:relative;isolation:isolate;padding-bottom:0}
+.buyers-page::after{display:none}
+.buyers-page .buyer-finish{display:block;position:relative;z-index:-1;width:min(700px,100%);height:auto;aspect-ratio:1490/540;margin:-60px auto 0;background-size:100% 100%}
+@media(max-width:600px){.buyers-page .buyer-finish{width:100%;margin-top:-40px}}
+
+.buyers-page:is(.sellers-page,.partners-page) .buyer-finish{margin-top:-60px}
+@media(max-width:600px){.buyers-page:is(.sellers-page,.partners-page) .buyer-finish{margin-top:-40px}}
+
+#returns .buyer-faq+.buyer-faq{margin-top:24px}
+
+.buyer-safety__hint{display:flex;align-items:center;justify-content:center;flex:0 0 20px;width:20px;height:20px}
+.buyer-safety__hint svg{display:block;width:20px;height:20px}
+.safety-dialog{position:fixed;inset:0;width:calc(100% - 32px);max-width:360px;max-height:80dvh;margin:auto;padding:32px 24px 28px;border:0;border-radius:24px;background:#fff;color:#303133;box-shadow:0 24px 80px #0002;font-family:Manrope,sans-serif;overflow:auto}
+.safety-dialog::backdrop{background:#20222566;backdrop-filter:blur(3px)}
+.safety-dialog h3{padding-right:26px;font-size:20px;line-height:1.4;font-weight:700;margin-bottom:16px}
+.safety-dialog p{font-size:14px;line-height:1.75;color:#606266;font-weight:500}
+.safety-dialog__close{position:absolute;top:12px;right:12px;display:flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:#f3f4f5;font-size:24px;line-height:1;color:#606266;cursor:pointer}
+.safety-dialog__close:focus-visible{outline:2px solid var(--orange-color);outline-offset:3px}
+html:has(.safety-dialog[open]){overflow:hidden}
+@media(max-width:700px){.buyer-safety__item .buyer-safety__trigger+.buyer-safety__tooltip{display:none!important}}
+
+@media(min-width:992px){#purchase>.buyer-container{max-width:1200px}}
+
+@media(min-width:992px){#payment>.buyer-container,#confirmation>.buyer-container{max-width:1200px}}
+
+.buyer-returns-grid{display:grid;grid-template-columns:1fr;gap:24px;align-items:start}
+#returns .buyer-faq+.buyer-faq{margin-top:0}
+.buyer-returns-offer{justify-self:start;align-self:start;margin:10px 15px}
+@media(min-width:992px){#returns>.buyer-container{max-width:1200px}.buyer-returns-grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px;row-gap:24px}}
+@media(max-width:600px){.buyer-returns-offer{margin:0;width:100%}}
+
+@media(max-width:600px){.buyer-returns-break{display:none}}
+
+.buyer-returns-action{display:flex;align-items:center;justify-content:flex-start;min-height:96px;padding:20px 24px;background:#fff;border-radius:24px}
+.buyer-returns-action .buyer-returns-offer{margin:0}
+@media(min-width:992px){#returns .buyer-faq:nth-child(3) summary{min-height:96px;box-sizing:border-box}}
+@media(max-width:600px){.buyer-returns-action{padding:20px;min-height:0}}
+
+#delivery .buyer-card{background:transparent;border-radius:0;padding:0}
+#delivery .buyer-grid{gap:24px}
+@media(min-width:992px){#delivery>.buyer-container{max-width:1200px}}
+
+.buyer-returns-action{justify-self:start;width:fit-content;max-width:100%;padding:24px;box-sizing:border-box;justify-content:center}
+.buyer-returns-action .buyer-returns-offer{align-self:center;max-width:100%}
+@media(max-width:600px){.buyer-returns-action{padding:20px}}
+
+/* One subtle continuous panel behind each accordion group. */
+#faq-items,.buyer-returns-grid{background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.48);border-radius:28px;padding:28px;box-sizing:border-box}
+@media(min-width:992px){#faq-items{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#faq-items,.buyer-returns-grid{padding:20px 16px;border-radius:24px}}
+
+#faq-items,.buyer-returns-grid{background:none;border:0;border-radius:0;padding:0}
+:is(#faq,#returns) .buyer-faq{background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.48);border-radius:24px;padding:12px}
+@media(max-width:600px){:is(#faq,#returns) .buyer-faq{padding:10px 16px;border-radius:20px}}
+
+:is(#faq,#returns) .buyer-faq{padding:0;border:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.48)}
+
+#faq-items,.buyer-returns-grid{background:rgba(255,255,255,.22);border:0;border-radius:28px;padding:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.48)}
+:is(#faq,#returns) .buyer-faq{background:none;border:0;padding:0;box-shadow:none}
+@media(max-width:600px){#faq-items,.buyer-returns-grid{border-radius:24px}}
+
+#faq-items,.buyer-returns-grid{padding:24px}
+@media(max-width:600px){#faq-items,.buyer-returns-grid{padding:20px 16px}}
+
+:is(#faq,#returns) .buyer-faq summary::before{font-size:36px}
+
+.buyer-returns-action{background:none;border-radius:0;box-shadow:none;padding:10px 15px;min-height:96px;align-items:center}
+@media(max-width:600px){.buyer-returns-action{padding:10px 0;min-height:0}}
