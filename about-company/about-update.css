@@ -161,8 +161,11 @@
 @media(min-width:901px){.source-trust{padding-top:233.8px}}
 .source-fan__card,.source-fan__card:last-child{height:190px;min-height:190px}
 .about-model-section .about-update__container>.source-trust__intro{max-width:600px;text-align:center;margin:0 auto 28px}
-.about-model-section{padding-top:76px}
-@media(max-width:900px){.about-model-section{padding-top:56px}}
+.about-work-section{padding-bottom:22px}
+.about-model-section{padding-top:38px}
+@media(max-width:991px){.about-work-section{padding-bottom:16px}}
+@media(max-width:900px){.about-model-section{padding-top:28px}}
+@media(max-width:600px){.about-work-section{padding-bottom:14px}}
 @media(min-width:901px){.source-trust{padding-top:257.6px}}
 @media(max-width:900px){.source-trust{padding-top:57px}}
 @media(max-width:600px){
@@ -247,7 +250,8 @@ body:has(.about-closing) .footer{position:relative;z-index:5;margin-top:-24px}
 body:has(.about-closing) .footer{margin-top:-44px;box-shadow:0 -10px 24px #3031331a}
 @media(max-width:700px){.about-closing .about-action:nth-child(n){min-height:226px;padding-bottom:48px}body:has(.about-closing) .footer{margin-top:-24px;box-shadow:0 -7px 18px #30313314}}
 
-.about-model-section .about-benefits-illustration{margin:0 auto -32px}
+/* Include half of the PNG's transparent top edge in the spacing reduction. */
+.about-model-section .about-benefits-illustration{margin:max(-46.5px,calc((30px - 100vw) * .0565)) auto -32px}
 @media(max-width:600px){.about-model-section .about-benefits-illustration{margin-bottom:-12px}}
 
 /* Give the mission its own space and sink the action cards into the footer. */
@@ -279,7 +283,7 @@ body:has(.about-closing) .footer{margin-top:-84px}
  .model-flow__card_sources,.model-flow__card_result{align-self:stretch;margin-top:32px;margin-bottom:32px}
 }
 
-@media(min-width:992px){.about-work-section>.about-update__container{width:calc(100% - 30px);max-width:1200px;padding:0;box-sizing:border-box}}
+@media(min-width:992px){.about-work-section>.about-update__container{width:calc(100% - 30px);max-width:1180px;padding:0;box-sizing:border-box}}
 
 .about-closing .about-mission-section{padding-bottom:128px}
 .about-closing .about-actions-section .about-update__heading{margin-bottom:24px}
@@ -313,7 +317,13 @@ body:has(.about-closing) .footer{margin-top:-84px}
 
 .about-work-section .about-work-card{background:transparent;border-radius:0;padding:0}
 .about-work-section .about-work-grid{gap:24px}
-@media(min-width:992px){.about-work-section .about-work-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.about-work-card__break{display:none}
+@media(min-width:992px){
+ .about-work-section .about-work-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .about-work-section .about-work-card h3{font-size:clamp(17px,1.7vw,18px)}
+ .about-work-section .about-work-card p{max-width:262px}
+ .about-work-card__break{display:initial}
+}
 
 @media(max-width:991px){
  .page.page_about{margin-top:0;padding-top:24px}

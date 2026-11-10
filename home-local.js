@@ -4,15 +4,55 @@ document.addEventListener('submit',event=>{const form=event.target;if(form.id!==
 // Touch uses native momentum scrolling; mouse/pen dragging works in mobile previews too.
 const homeCardTrack = document.querySelector('.dom-cards');
 if (homeCardTrack) {
+  // Match the lift to each description as it wraps or the font loads.
+  const descriptionObserver = new ResizeObserver(entries => {
+    for (const { target, contentRect } of entries) {
+      target.parentElement.style.setProperty('--card-description-height', `${contentRect.height}px`);
+    }
+  });
+  homeCardTrack.querySelectorAll('.dom-card-panel p').forEach(description => {
+    descriptionObserver.observe(description);
+  });
+
+  const mobileCards = matchMedia('(max-width:767px)');
+  const cardDialog = document.querySelector('#home-card-dialog');
+  const dialogTitle = cardDialog.querySelector('h3');
+  const dialogDescription = cardDialog.querySelector('p');
+  let dialogOpener;
+
+  homeCardTrack.querySelectorAll('.dom-card-info').forEach(button => {
+    button.addEventListener('click', () => {
+      const panel = button.closest('.dom-card').querySelector('.dom-card-panel');
+      dialogTitle.textContent = panel.querySelector('h2').innerText;
+      dialogDescription.textContent = panel.querySelector('p').textContent;
+      dialogOpener = button;
+      cardDialog.showModal();
+    });
+  });
+  cardDialog.addEventListener('click', event => {
+    if (event.target !== cardDialog) return;
+    const { left, right, top, bottom } = cardDialog.getBoundingClientRect();
+    if (event.clientX < left || event.clientX > right || event.clientY < top || event.clientY > bottom) {
+      cardDialog.close();
+    }
+  });
+  cardDialog.addEventListener('close', () => {
+    if (mobileCards.matches) dialogOpener?.focus({ preventScroll: true });
+    dialogOpener = null;
+  });
+  mobileCards.addEventListener('change', () => {
+    if (!mobileCards.matches && cardDialog.open) cardDialog.close();
+  });
+
   let drag = null;
   let suppressCardClick = false;
   homeCardTrack.addEventListener('dragstart', event => {
-    if (matchMedia('(max-width:767px)').matches) event.preventDefault();
+    if (mobileCards.matches) event.preventDefault();
   });
   homeCardTrack.addEventListener('touchstart', event => event.stopPropagation(), {passive:true});
   homeCardTrack.addEventListener('touchmove', event => event.stopPropagation(), {passive:true});
   homeCardTrack.addEventListener('pointerdown', event => {
-    if (!matchMedia('(max-width:767px)').matches || event.pointerType === 'touch' || event.button !== 0) return;
+    if (!mobileCards.matches || event.pointerType === 'touch' || event.button !== 0) return;
     suppressCardClick = false;
     drag = {id:event.pointerId, x:event.clientX, scroll:homeCardTrack.scrollLeft, moved:false};
   });
@@ -39,7 +79,7 @@ if (homeCardTrack) {
   homeCardTrack.addEventListener('pointercancel', finishCardDrag);
   homeCardTrack.addEventListener('lostpointercapture', finishCardDrag);
   homeCardTrack.addEventListener('click', event => {
-    if (!suppressCardClick) return;
+    if (!suppressCardClick || event.detail === 0) return;
     event.preventDefault();
     event.stopImmediatePropagation();
     suppressCardClick = false;
